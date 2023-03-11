@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/technology.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  
+  <title>Space tourism</title>
+</head>
+<body>
+  <header class="nav-wrapper">
+    <nav class="navbar">
+      <img src="assets/shared/logo.svg" alt="Company Logo">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav no-search">
+        <li class="nav-item"><a href="index.html">HOME</a></li>
+        <li class="nav-item"><a href="destination-moon.html">DESTINATION</a></li>
+        <li class="nav-item"><a href="crew-commander.html">CREW</a></li>
+        <li class="nav-item current-page"><a href="#">TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="container">
+      <div id="heading"><span class="numbering">03</span><h1>SPACE LAUNCH 101</h1></div>
+      <div id="carousel">
+        <div id="carousel-text-container" class="carousel-divs">
+          <div class="carousel-nav">
+            <button type="button" id="button1" class="carousel__indicator current-slide">1</button>
+            <button type="button" id="button2" class="carousel__indicator ">2</button>
+            <button type="button" id="button3" class="carousel__indicator">3</button>
+          </div>
+          <div class="carousel-text">
+            <div id="terminology">THE TERMINOLOGY...</div>
+            <h2>LAUNCH VEHICLE</h2>
+            <p id="carousel-p">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+  it's quite an awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source id="source1" media="(max-width:800px)" srcset="assets/technology/image-launch-vehicle-landscape.jpg">
+          <source id="source2" media="(min-width: 800px)" srcset="assets/technology/image-launch-vehicle-portrait.jpg">
+          <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="lauch-vehicle" id="carousel-img" class="carousel-divs">
+        </picture>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="jquery.min.js"></script>
+  <script src="main.js"></script>
+  <script src="technology.js"></script>
+</body>
+</html>
